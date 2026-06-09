@@ -515,63 +515,19 @@ footer{border-top:1px solid var(--border);padding:1.1rem 2.75rem;display:flex;ju
     <h1 class="h1">Le comité <em><span data-edit="apropos-title">PASS.</span></em></h1>
     <p class="lead" data-edit="apropos-lead">Programme d'accompagnement et de soutien à la réussite scolaire du baccalauréat en sciences biomédicales. Une initiative étudiante, pour les étudiants.</p>
 
-    <!-- MISSION -->
-    <div id="ap-mission-anchor" style="scroll-margin-top:80px">
-      <div class="eyebrow" style="margin-top:1.5rem"><div class="ey-l"></div><span class="ey-t">Mission</span></div>
-      <div class="g2" style="margin-bottom:2.5rem">
-        <div class="card"><div class="card-tag" data-edit="why-tag">Pourquoi ce projet</div><div class="h3" data-edit="why-title">Combler le manque</div><p class="card-p" data-edit="why-body">Certains cours réservent des surprises qu'on aurait aimé connaître à l'avance. Notre objectif : une ressource utile, honnête et accessible pour les futures cohortes.</p></div>
-        <div class="card"><div class="card-tag" data-edit="vision-tag">Vision long terme</div><div class="h3" data-edit="vision-title">Un projet qui dure</div><p class="card-p" data-edit="vision-body">Si le projet connaît le succès espéré, il pourrait être admissible à des bourses ou financements, en assurant la croissance et la permanence.</p></div>
-      </div>
+    <div class="card-grid-wrap"><div class="g2" style="margin-bottom:0" id="accueil-cards">
+      <div class="card deletable-card"><button class="delete-card-btn" onclick="deleteCard(this)" title="Supprimer">✕</button><div class="card-tag">Pourquoi ce projet</div><div class="h3">Combler le manque</div><p class="card-p" data-edit="why-body">Certains cours réservent des surprises qu'on aurait aimé connaître à l'avance. Notre objectif : une ressource utile, honnête et accessible pour les futures cohortes.</p></div>
+      <div class="card"><div class="card-tag">Vision long terme</div><div class="h3">Un projet qui dure</div><p class="card-p" data-edit="vision-body">Si le projet connaît le succès espéré, il pourrait être admissible à des bourses ou financements, en assurant la croissance et la permanence.</p></div>
     </div>
-
-    <hr class="div">
-
-    <!-- ÉQUIPE -->
-    <div id="ap-equipe-anchor" style="scroll-margin-top:80px">
-      <div class="eyebrow"><div class="ey-l"></div><span class="ey-t">Équipe</span></div>
-      <h2 class="h2" style="margin-bottom:1.5rem">Les équipes <em>PASS.</em></h2>
-
-      <!-- 2025-2026 -->
-      <div class="equipe-year-block">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
-          <div style="font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--goldl);font-family:'Outfit',sans-serif;font-weight:500">Cohorte 2025–2026</div>
-          <button id="add-team-2526-btn" onclick="openMemberModal('team-grid-2526')" style="display:none;background:var(--goldp);border:1px dashed var(--border);color:var(--goldl);font-size:.58rem;font-family:'Outfit',sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:.4rem .8rem;cursor:pointer;border-radius:2px;align-items:center;gap:.3rem"><i class="ti ti-plus" style="font-size:12px"></i> Ajouter un membre</button>
-        </div>
-        <div class="g3" id="team-grid-2526" style="margin-bottom:.5rem">
-          <div class="team-card card draggable-card" draggable="true"><i class="ti ti-grip-vertical drag-handle"></i><button class="delete-card-btn" onclick="deleteCard(this)">✕</button><div class="team-init">EP</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem">É. Pelletier</div><div style="font-size:.67rem;color:var(--muted)">Coordination, rédaction</div></div></div>
-          <div class="team-card card draggable-card" draggable="true"><i class="ti ti-grip-vertical drag-handle"></i><button class="delete-card-btn" onclick="deleteCard(this)">✕</button><div class="team-init">ML</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem">M. Leblanc</div><div style="font-size:.67rem;color:var(--muted)">Séances préparatoires</div></div></div>
-          <div class="team-card card draggable-card" draggable="true"><i class="ti ti-grip-vertical drag-handle"></i><button class="delete-card-btn" onclick="deleteCard(this)">✕</button><div class="team-init">CG</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem">C. Gagné</div><div style="font-size:.67rem;color:var(--muted)">Communications, web</div></div></div>
-        </div>
-      </div>
-
-      <hr class="div" style="margin:1.5rem 0">
-
-      <!-- 2026-2027 -->
-      <div class="equipe-year-block">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem">
-          <div style="font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--goldl);font-family:'Outfit',sans-serif;font-weight:500">Cohorte 2026–2027</div>
-          <button id="add-team-2627-btn" onclick="openMemberModal('team-grid-2627')" style="display:none;background:var(--goldp);border:1px dashed var(--border);color:var(--goldl);font-size:.58rem;font-family:'Outfit',sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:.4rem .8rem;cursor:pointer;border-radius:2px;align-items:center;gap:.3rem"><i class="ti ti-plus" style="font-size:12px"></i> Ajouter un membre</button>
-        </div>
-        <div class="g3" id="team-grid-2627" style="margin-bottom:.5rem">
-          <div class="team-card card" style="background:var(--navy-s);cursor:pointer" onclick="show('impliquer',null)">
-            <div class="team-init" style="color:var(--muted)">?</div>
-            <div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem;color:var(--muted)">Votre nom ici</div><div style="font-size:.67rem;color:var(--gold)">Prendre la relève →</div></div>
-          </div>
-        </div>
-      </div>
-
-      <button class="add-card-btn" id="add-year-btn" onclick="addYearBlock()" style="display:none;margin-top:1px"><i class="ti ti-plus" style="font-size:14px"></i> Ajouter une cohorte</button>
+    <div class="eyebrow"><div class="ey-l"></div><span class="ey-t">L'équipe fondatrice</span></div>
+    <div class="g3" style="margin-bottom:2rem">
+      <div class="team-card card"><div class="team-init" data-edit="m1-init">EP</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem" data-edit="m1-name">É. Pelletier</div><div style="font-size:.67rem;color:var(--muted)" data-edit="m1-role">Coordination, rédaction</div></div></div>
+      <div class="team-card card"><div class="team-init" data-edit="m2-init">ML</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem" data-edit="m2-name">M. Leblanc</div><div style="font-size:.67rem;color:var(--muted)" data-edit="m2-role">Séances préparatoires</div></div></div>
+      <div class="team-card card"><div class="team-init" data-edit="m3-init">CG</div><div><div style="font-size:.82rem;font-weight:500;margin-bottom:.12rem" data-edit="m3-name">C. Gagné</div><div style="font-size:.67rem;color:var(--muted)" data-edit="m3-role">Communications, web</div></div></div>
     </div>
-
-    <hr class="div">
-
-    <!-- CONTACT -->
-    <div id="ap-contact-anchor" style="scroll-margin-top:80px">
-      <div class="eyebrow"><div class="ey-l"></div><span class="ey-t">Contact</span></div>
-      <div class="g2" style="margin-bottom:2rem">
-        <div class="card"><div class="card-tag">Nous écrire</div><div class="h3">Contact</div><p class="card-p">Pour toute question sur le SuperGuide, les séances ou les opportunités d'implication :</p><span class="card-link" data-edit="contact-email">comite.pass.bio@umontreal.ca</span></div>
-        <div class="card"><div class="card-tag">Collaborateurs</div><div class="h3">Reconnaissances</div><p class="card-p">Tous les collaborateurs verront leur nom figurer parmi les auteurs, publié sur ce site.</p><span class="card-link" onclick="show('impliquer',null)">Rejoindre les auteurs →</span></div>
-      </div>
+    <div class="g2">
+      <div class="card"><div class="card-tag">Nous écrire</div><div class="h3">Contact</div><p class="card-p">Pour toute question sur le SuperGuide, les séances ou les opportunités d'implication :</p><span class="card-link" data-edit="contact-email">comite.pass.bio@umontreal.ca</span></div>
+      <div class="card"><div class="card-tag">Collaborateurs</div><div class="h3">Reconnaissances</div><p class="card-p">Tous les collaborateurs verront leur nom figurer parmi les auteurs, publié sur ce site.</p><span class="card-link" onclick="show('impliquer',null)">Rejoindre les auteurs →</span></div>
     </div>
   </div>
 
