@@ -99,7 +99,16 @@ p.lede{color:var(--ink-dim);font-size:1.02rem;max-width:60ch;}
 .top-hero{padding-top:clamp(2rem,5vw,3rem);}
 .top-hero-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:1.2rem;margin-bottom:1rem;}
 .top-hero-head .logotype{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(2.6rem,6vw,4rem);color:var(--ink);}
-.top-hero-head .tagline{color:var(--accent);font-size:1.05rem;max-width:none;white-space:nowrap;}
+@media (max-width:600px){
+  .top-hero-head .tagline{
+    white-space:normal;
+    max-width:100%;
+  }
+  .top-hero-head{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
 .top-hero-meta{color:var(--ink-dim);font-size:0.95rem;margin-bottom:1.8rem;}
 .top-hero-meta a{color:var(--ink-dim);font-weight:700;}
 .top-hero h1.welcome{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:1rem;}
